@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Item} from "../item/item";
 import {ItemService} from "../item/item.service";
+import {Location} from "@angular/common";
 
 @Component({
     selector: 'create-item',
@@ -8,19 +9,26 @@ import {ItemService} from "../item/item.service";
     templateUrl: 'create-item.component.html',
     styleUrls: ['./create-item.component.css']
 })
-export class CreateItemComponent implements OnInit{
+export class CreateItemComponent implements OnInit {
 
     item: Item;
 
-    constructor(private itemService: ItemService) {
+    constructor(private itemService: ItemService,
+                private  location: Location) {
     }
 
-    ngOnInit(){
+    ngOnInit() {
         this.item = new Item();
     }
 
     save() {
         this.itemService.addItem(this.item);
+        this.location.back();
+    }
+
+    back() {
+        console.log('ddd');
+        this.location.back();
     }
 
 }
