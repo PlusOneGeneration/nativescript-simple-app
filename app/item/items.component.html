@@ -1,10 +1,11 @@
-<ActionBar title="My App" class="action-bar">
+<ActionBar title="Person List">
+    <ActionItem text="Create" (tap)="create()"></ActionItem>
 </ActionBar>
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
-                class="list-group-item"></Label>
+                   class="list-group-item"></Label>
         </ng-template>
     </ListView>
 </StackLayout>
