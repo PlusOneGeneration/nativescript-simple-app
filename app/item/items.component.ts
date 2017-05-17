@@ -20,7 +20,6 @@ export class ItemsComponent implements OnInit {
     }
 
     create() {
-        this.router.navigate(['item/create'])
-        console.log('ggggggggggg')
+        this.router.navigate(['/items/create']);
     }
 }

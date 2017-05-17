@@ -1,5 +1,5 @@
 export class Item {
-    id: number;
-    name: string;
-    role: string;
+    id: number = null;
+    name: string = '';
+    role: string = '';
 }

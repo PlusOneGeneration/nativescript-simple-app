@@ -1,2 +1,8 @@
 <ActionBar title="Editor">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+    <ActionItem text="Save" (tap)="save()"></ActionItem>
 </ActionBar>
+<StackLayout>
+    <TextField hint="Name" [(ngModel)]="item.name"></TextField>
+    <TextField hint="Role" [(ngModel)]="item.role"></TextField>
+</StackLayout>
