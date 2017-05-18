@@ -4,8 +4,11 @@
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
-            <Label [nsRouterLink]="['/items', item.id]" [text]="item.name"
-                   class="list-group-item"></Label>
+            <StackLayout>
+                <Label [nsRouterLink]="['/items', item.id]" [text]="item.name"
+                       class="list-group-item"></Label>
+                <Button text="Remove" class="list-group" (tap)="remove(item)"></Button>
+            </StackLayout>
         </ng-template>
     </ListView>
 </StackLayout>

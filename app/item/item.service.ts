@@ -26,7 +26,7 @@ export class ItemService {
     }
 
     deleteItem(item: Item): void {
-        this.items = this.items.filter(item => item.id !== item.id);
+        this.items = this.items.filter(_item => _item.id !== item.id);
     }
 
 }

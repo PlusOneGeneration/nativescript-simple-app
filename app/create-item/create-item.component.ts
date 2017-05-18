@@ -27,7 +27,6 @@ export class CreateItemComponent implements OnInit {
     }
 
     back() {
-        console.log('ddd');
         this.location.back();
     }
 

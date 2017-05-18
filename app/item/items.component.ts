@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 
-import { Item } from "./item";
-import { ItemService } from "./item.service";
+import {Item} from "./item";
+import {ItemService} from "./item.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -13,13 +13,23 @@ export class ItemsComponent implements OnInit {
     items: Item[];
 
     constructor(private itemService: ItemService,
-    private router: Router) { }
+                private router: Router) {
+    }
 
     ngOnInit(): void {
+        this.getItems();
+    }
+
+    getItems() {
         this.items = this.itemService.getItems();
     }
 
     create() {
         this.router.navigate(['/items/create']);
+    }
+
+    remove(item: Item) {
+        this.itemService.deleteItem(item);
+        this.getItems();
     }
 }
