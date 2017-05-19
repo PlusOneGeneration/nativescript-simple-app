@@ -3,12 +3,14 @@
         <Label class="mdi" [text]="'mdi-person-add' | fonticon"></Label>
     </ActionItem>
 </ActionBar>
+<!--<Image-->
+       <!--src="~/images/people-png-21.png"-->
+       <!--class="other-cover-image"-->
+       <!--height="80" stretch="none" width="80">-->
+
+<!--</Image>-->
 <StackLayout class="page">
-    <StackLayout class="icons-container">
-        <!--<Label class="mdi"-->
-        <!--[text]="'mdi-android' | fonticon">-->
-        <!--</Label>-->
-    </StackLayout>
+
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <StackLayout>
@@ -27,3 +29,4 @@
         </ng-template>
     </ListView>
 </StackLayout>
+

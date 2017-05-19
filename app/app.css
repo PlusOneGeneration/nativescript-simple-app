@@ -12,6 +12,11 @@
     padding-bottom: 0px;
 }
 
+/*Image.other-profile-image {*/
+    /*height: 75px;*/
+    /*width: 75px;*/
+    /*border-radius: 36px;*/
+/*}*/
 
 ActionBar {
     background-color:#53b0bd;
@@ -22,10 +27,10 @@ ActionItem{
     color: #0a1c27;
 }
 
-/*TextField {*/
-    /*padding: 10px;*/
-    /*font-size: 13px;*/
-/*}*/
+TextField {
+    padding: 10px;
+    font-size: 28px;
+}
 
 Page {
     font-size: 15px;

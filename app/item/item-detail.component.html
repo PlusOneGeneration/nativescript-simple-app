@@ -1,4 +1,5 @@
 <ActionBar title="Detail page">
+    <NavigationButton text="Back" (tap)="back()" android.systemIcon="ic_menu_back"></NavigationButton>
     <ActionItem text="Edit" [nsRouterLink]="['/items', item.id, 'edit']" class="icons-container">
        <Label class="mdi" [text]="'mdi-create' | fonticon"></Label>
     </ActionItem>
