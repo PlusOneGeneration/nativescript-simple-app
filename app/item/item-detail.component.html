@@ -1,10 +1,12 @@
 <ActionBar title="Detail">
-    <ActionItem text="Edit" [nsRouterLink]="['/items', item.id, 'edit']" android.systemIcon="ic_menu_edit"></ActionItem>
+    <ActionItem text="Edit" [nsRouterLink]="['/items', item.id, 'edit']"></ActionItem>
 </ActionBar>
 <FlexboxLayout flexDirection="column" >
     <FlexboxLayout class="m-15">
-        <Label class="vertical-align='center' h2 p-15 text-center" [text]="'Name :' + item.name"></Label>
+        <Label class=" h3 text-center" [text]="'Name : ' + item.name"></Label>
     </FlexboxLayout>
 
-    <Label class="h2" [text]="'Phone :' +item.phone"></Label>
+    <FlexboxLayout class="m-15">
+        <Label class="h3" [text]="'Phone :' + item.phone"></Label>
+    </FlexboxLayout>
 </FlexboxLayout>

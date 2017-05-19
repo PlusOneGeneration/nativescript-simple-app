@@ -11,7 +11,7 @@ import {ItemDetailComponent} from "./item/item-detail.component";
 import {CreateItemComponent} from "./create-item/create-item.component";
 import {NativeScriptRouterModule} from "nativescript-angular";
 import {LocalStorageService} from "./local-storage.service";
-import {TNSFontIconModule} from "nativescript-ng2-fonticon";
+// import {TNSFontIconModule} from "nativescript-ng2-fonticon";
 
 @NgModule({
     bootstrap: [

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import {Location} from "@angular/common";
-import { TNSFontIconService } from 'nativescript-ng2-fonticon';
+// import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 
 import { Item } from "./item";
 import { ItemService } from "./item.service";
@@ -18,7 +18,7 @@ export class ItemDetailComponent implements OnInit {
         private itemService: ItemService,
         private route: ActivatedRoute,
         private location: Location,
-        private fonticon: TNSFontIconService
+        // private fonticon: TNSFontIconService
     ) { }
 
     ngOnInit(): void {
