@@ -1,12 +1,15 @@
-<ActionBar title="Detail">
-    <ActionItem text="Edit" [nsRouterLink]="['/items', item.id, 'edit']"></ActionItem>
+<ActionBar title="Detail page">
+    <ActionItem text="Edit" [nsRouterLink]="['/items', item.id, 'edit']" class="icons-container">
+       <Label class="mdi" [text]="'mdi-create' | fonticon"></Label>
+    </ActionItem>
 </ActionBar>
 <FlexboxLayout flexDirection="column" >
     <FlexboxLayout class="m-15">
         <Label class=" h3 text-center" [text]="'Name : ' + item.name"></Label>
     </FlexboxLayout>
 
-    <FlexboxLayout class="m-15">
-        <Label class="h3" [text]="'Phone :' + item.phone"></Label>
+    <FlexboxLayout class="m-15 ">
+        <Label class="h3" [text]="'Phone : '"></Label>
+        <Label class="h3" [text]="item.phone"></Label>
     </FlexboxLayout>
 </FlexboxLayout>

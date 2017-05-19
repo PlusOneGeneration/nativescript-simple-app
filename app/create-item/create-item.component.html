@@ -1,6 +1,13 @@
 <ActionBar title="Editor">
-    <NavigationButton text="Back" android.systemIcon="ic_menu_back" (tap)="back()"></NavigationButton>
-    <ActionItem text="Save" (tap)="save()"></ActionItem>
+    <NavigationButton text="Back" (tap)="back()" android.systemIcon="ic_menu_back">
+    <!--<ActionItem text="Save" (tap)="save()" class="icons-container">-->
+        <!--<Label class="mdi" [text]="'mdi-keyboard-backspace' | fonticon"></Label>-->
+    <!--</ActionItem>-->
+    </NavigationButton>
+
+    <ActionItem text="Save" (tap)="save()" class="icons-container">
+        <Label class="mdi" [text]="'mdi-check-circle' | fonticon"></Label>
+    </ActionItem>
 </ActionBar>
 <StackLayout>
     <TextField hint="Name" [(ngModel)]="item.name"></TextField>

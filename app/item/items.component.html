@@ -1,15 +1,26 @@
 <ActionBar title="Person List">
-    <ActionItem text="Add" [nsRouterLink]="['/create']"></ActionItem>
+    <ActionItem text="Add" [nsRouterLink]="['/create']" class="icons-container">
+        <Label class="mdi" [text]="'mdi-person-add' | fonticon"></Label>
+    </ActionItem>
 </ActionBar>
 <StackLayout class="page">
+    <StackLayout class="icons-container">
+        <!--<Label class="mdi"-->
+        <!--[text]="'mdi-android' | fonticon">-->
+        <!--</Label>-->
+    </StackLayout>
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <StackLayout>
                 <GridLayout columns="*, auto">
-                    <Label [nsRouterLink]="['/items', item.id]" [text]="item.name"
-                           class="list-group-item"></Label>
-                    <StackLayout col="1">
-                        <Button text="Remove"(tap)="remove(item)" style="background-color:#a7e7e1 "></Button>
+                    <StackLayout class="icons-container">
+                        <Label class="mdi" [text]="'mdi-face' | fonticon"></Label>
+                        <Label [nsRouterLink]="['/items', item.id]" [text]="item.name" class="h3"></Label>
+                    </StackLayout>
+                    <StackLayout col="1" class="icons-container">
+                        <Label class="mdi"
+                               [text]="'mdi-cancel' | fonticon" (tap)="remove(item)">
+                        </Label>
                     </StackLayout>
                 </GridLayout>
             </StackLayout>

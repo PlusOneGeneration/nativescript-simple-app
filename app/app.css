@@ -1,14 +1,16 @@
 
 @import 'nativescript-theme-core/css/core.light.css';
-/*!*@import '<./custom.css';*!*/
 
-/*.mdi {*/
-    /*font-family: "Material Icons", "MaterialIcons-Regular";*/
-/*}*/
+.mdi {
+    font-family: "Material Icons", "MaterialIcons-Regular";
+}
 
-/*.material-icon {*/
-    /*font-family: 'Material-Design-Iconic-Font';*/
-/*}*/
+.icons-container Label {
+    /*text-align: center;*/
+    font-size: 28px;
+    /*vertical-align: center;*/
+    padding-bottom: 0px;
+}
 
 
 ActionBar {
@@ -34,7 +36,10 @@ Page {
 }
 
 .h2 {
-    font-size: 30px;
+    text-align: center;
+    font-size: 32px;
+    vertical-align: center;
+    /*padding-bottom: 30px;*/
 }
 
 .h3 {
