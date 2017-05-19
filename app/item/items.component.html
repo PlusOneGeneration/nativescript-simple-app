@@ -1,13 +1,17 @@
 <ActionBar title="Person List">
-    <ActionItem text="Create" [nsRouterLink]="['/create']"></ActionItem>
+    <ActionItem text="Add" [nsRouterLink]="['/create']"></ActionItem>
 </ActionBar>
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <StackLayout>
-                <Label [nsRouterLink]="['/items', item.id]" [text]="item.name"
-                       class="list-group-item"></Label>
-                <Button text="Remove" class="list-group" (tap)="remove(item)"></Button>
+                <GridLayout columns="*, auto">
+                    <Label [nsRouterLink]="['/items', item.id]" [text]="item.name"
+                           class="list-group-item"></Label>
+                    <StackLayout col="1">
+                        <Button text="Remove"(tap)="remove(item)" style="background-color:#e70029 "></Button>
+                    </StackLayout>
+                </GridLayout>
             </StackLayout>
         </ng-template>
     </ListView>

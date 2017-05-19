@@ -1,2 +1,62 @@
 
 @import 'nativescript-theme-core/css/core.light.css';
+/*!*@import '<./custom.css';*!*/
+
+/*.mdi {*/
+    /*font-family: "Material Icons", "MaterialIcons-Regular";*/
+/*}*/
+
+/*.material-icon {*/
+    /*font-family: 'Material-Design-Iconic-Font';*/
+/*}*/
+
+
+ActionBar {
+    background-color:#98cbed;
+    color: #0a1c27;
+}
+
+ActionItem{
+    color: #0a1c27;
+}
+
+/*TextField {*/
+    /*padding: 10px;*/
+    /*font-size: 13px;*/
+/*}*/
+
+Page {
+    font-size: 15px;
+}
+
+.h1 {
+    font-size: 36px;
+}
+
+.h2 {
+    font-size: 30px;
+}
+
+.h3 {
+    font-size: 24px;
+}
+
+.h4 {
+    font-size: 18px;
+}
+
+
+.page{
+    background-color: white;
+    /*border-color: #35478c;*/
+    color:#0a1c27;
+}
+
+.btn-primary {
+    /*background-color: #35478c;*/
+    /*border-color: #35478c;*/
+    color:#0a1c27;
+}
+
+
+

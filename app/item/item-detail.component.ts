@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import {Location} from "@angular/common";
+import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 
 import { Item } from "./item";
 import { ItemService } from "./item.service";
@@ -14,11 +16,22 @@ export class ItemDetailComponent implements OnInit {
 
     constructor(
         private itemService: ItemService,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private location: Location,
+        private fonticon: TNSFontIconService
     ) { }
 
     ngOnInit(): void {
         const id = +this.route.snapshot.params["id"];
         this.item = this.itemService.getItem(id);
+    }
+
+    remove() {
+        this.itemService.deleteItem(this.item);
+        this.back();
+    }
+
+    back() {
+        this.location.back();
     }
 }
