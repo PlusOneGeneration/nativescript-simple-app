@@ -6,9 +6,7 @@
 }
 
 .icons-container Label {
-    /*text-align: center;*/
     font-size: 28px;
-    /*vertical-align: center;*/
     padding-bottom: 0px;
 }
 
@@ -28,8 +26,9 @@ ActionItem{
 }
 
 TextField {
-    padding: 10px;
-    font-size: 28px;
+    padding: 50px;
+    font-size: 20px;
+    placeholder-color: black;
 }
 
 Page {
@@ -44,7 +43,6 @@ Page {
     text-align: center;
     font-size: 32px;
     vertical-align: center;
-    /*padding-bottom: 30px;*/
 }
 
 .h3 {
@@ -58,13 +56,10 @@ Page {
 
 .page{
     background-color: white;
-    /*border-color: #35478c;*/
     color:#0a1c27;
 }
 
 .btn-primary {
-    /*background-color: #35478c;*/
-    /*border-color: #35478c;*/
     color:#0a1c27;
 }
 

@@ -1,27 +1,27 @@
 <ActionBar title="Person List">
     <ActionItem text="Add" [nsRouterLink]="['/create']" class="icons-container">
-        <Label class="mdi" [text]="'mdi-person-add' | fonticon"></Label>
+        <Label class="mdi" [text]="'mdi-person-add' | fonticon" style="padding-right: 50px"></Label>
     </ActionItem>
 </ActionBar>
-<!--<Image-->
-       <!--src="~/images/people-png-21.png"-->
-       <!--class="other-cover-image"-->
-       <!--height="80" stretch="none" width="80">-->
+<!--<StackLayout>-->
+    <!--<Image-->
+            <!--src="~/images/apple.jpg">-->
 
-<!--</Image>-->
+    <!--</Image>-->
+<!--</StackLayout>-->
+
 <StackLayout class="page">
 
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <StackLayout>
                 <GridLayout columns="*, auto">
-                    <StackLayout class="icons-container">
-                        <Label class="mdi" [text]="'mdi-face' | fonticon"></Label>
-                        <Label [nsRouterLink]="['/items', item.id]" [text]="item.name" class="h3"></Label>
-                    </StackLayout>
+                    <FlexboxLayout class="icons-container" [nsRouterLink]="['/items', item.id]">
+                        <Label class="mdi" [text]="'mdi-face' | fonticon" style="padding-right: 50px;padding-left: 50px; padding-top: 15px"></Label>
+                        <Label  [text]="item.name" class="h3"></Label>
+                    </FlexboxLayout>
                     <StackLayout col="1" class="icons-container">
-                        <Label class="mdi"
-                               [text]="'mdi-cancel' | fonticon" (tap)="remove(item)">
+                        <Label class="mdi" [text]="'mdi-cancel' | fonticon" (tap)="remove(item)" style="padding-right: 50px;padding-left: 50px;padding-top: 15px">
                         </Label>
                     </StackLayout>
                 </GridLayout>
