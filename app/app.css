@@ -8,6 +8,7 @@
 .icons-container Label {
     font-size: 28px;
     padding-bottom: 0px;
+    opacity: 0.5
 }
 
 /*Image.other-profile-image {*/
@@ -46,13 +47,13 @@ Page {
 }
 
 .h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .h4 {
     font-size: 18px;
+    font-family:monospace
 }
-
 
 .page{
     background-color: white;
@@ -62,6 +63,12 @@ Page {
 .btn-primary {
     color:#0a1c27;
 }
+
+/*.list-item-custom{*/
+    /*font-size: 22px;*/
+    /*opacity: 1;*/
+    /*padding-top: 13px*/
+/*}*/
 
 
 

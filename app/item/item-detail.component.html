@@ -4,12 +4,12 @@
        <Label class="mdi" [text]="'mdi-create' | fonticon" style="padding-right: 50px"></Label>
     </ActionItem>
 </ActionBar>
-<FlexboxLayout flexDirection="column" >
-    <FlexboxLayout class="m-15">
-        <Label class=" h3 text-center" [text]="'Name : ' + item.name"></Label>
+<FlexboxLayout flexDirection="column" style="padding-left: 55px">
+    <FlexboxLayout >
+        <Label class="h3" [text]="'Name : ' + item.name" ></Label>
     </FlexboxLayout>
 
-    <FlexboxLayout class="m-15 ">
+    <FlexboxLayout >
         <Label class="h3" [text]="'Phone : '"></Label>
         <Label class="h3" [text]="item.phone"></Label>
     </FlexboxLayout>

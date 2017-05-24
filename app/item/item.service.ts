@@ -5,13 +5,6 @@ import {Item} from "./item";
 
 @Injectable()
 export class ItemService {
-    // private items: Item[] = [
-    //     {id: 1, name: "Ira", phone: 111},
-    //     {id: 2, name: "Feya", phone: 22},
-    //     {id: 3, name: "Anleo", phone: 33},
-    //     {id: 4, name: "Koralex", phone: 44},
-    //     {id: 5, name: "Dimon", phone: 55}
-    // ];
 
     items: Item[] = [];
 

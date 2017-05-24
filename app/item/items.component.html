@@ -3,25 +3,18 @@
         <Label class="mdi" [text]="'mdi-person-add' | fonticon" style="padding-right: 50px"></Label>
     </ActionItem>
 </ActionBar>
-<!--<StackLayout>-->
-    <!--<Image-->
-            <!--src="~/images/apple.jpg">-->
-
-    <!--</Image>-->
-<!--</StackLayout>-->
 
 <StackLayout class="page">
-
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <StackLayout>
                 <GridLayout columns="*, auto">
                     <FlexboxLayout class="icons-container" [nsRouterLink]="['/items', item.id]">
                         <Label class="mdi" [text]="'mdi-face' | fonticon" style="padding-right: 50px;padding-left: 50px; padding-top: 15px"></Label>
-                        <Label  [text]="item.name" class="h3"></Label>
+                        <Label  [text]="item.name"  style="font-size: 22px;opacity: 1;padding-top: 13px"></Label>
                     </FlexboxLayout>
                     <StackLayout col="1" class="icons-container">
-                        <Label class="mdi" [text]="'mdi-cancel' | fonticon" (tap)="remove(item)" style="padding-right: 50px;padding-left: 50px;padding-top: 15px">
+                        <Label class="mdi" [text]="'mdi-cancel' | fonticon" (tap)="remove(item)" style="padding-right: 50px;padding-left: 50px;padding-top: 15px; ">
                         </Label>
                     </StackLayout>
                 </GridLayout>

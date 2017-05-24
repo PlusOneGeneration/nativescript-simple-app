@@ -9,7 +9,6 @@ import {ItemService} from "./item/item.service";
 import {ItemsComponent} from "./item/items.component";
 import {ItemDetailComponent} from "./item/item-detail.component";
 import {CreateItemComponent} from "./create-item/create-item.component";
-import {NativeScriptRouterModule} from "nativescript-angular";
 import {LocalStorageService} from "./local-storage.service";
 import {TNSFontIconModule} from "nativescript-ng2-fonticon";
 
@@ -22,7 +21,6 @@ import {TNSFontIconModule} from "nativescript-ng2-fonticon";
         NativeScriptModule,
         AppRoutingModule,
         NativeScriptFormsModule,
-        NativeScriptRouterModule,
         TNSFontIconModule.forRoot({
             'mdi': 'material-design-icons.css'
         })
