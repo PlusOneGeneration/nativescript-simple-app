@@ -1,6 +1,8 @@
 # nativescript-simple-app
 
-Simple application for storing contacts.
+Simple application for storing contacts. Main view looks like this:
+
+![Person list main view](https://github.com/PlusOneGeneration/nativescript-simple-app/blob/master/app/images/Screenshot%20from%202017%20screen1.png)
 
 This project has written with:
 * [NativeScript](http://www.nativescript.org/)
